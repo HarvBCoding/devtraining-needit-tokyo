@@ -41,6 +41,13 @@
 		g_form.addOption('u_what_needed', 'legal2', 'Legal 2');
 		g_form.addOption('u_what_needed', 'other', 'Other');
 	}
+	
+	//If the value of Request is sales, add choices to What Needed
+	if  (newValue == 'sales'){
+		g_form.addOption('u_what_needed', 'sales1', 'Sales 1');
+		g_form.addOption('u_what_needed', 'sales2', 'Sales 2');
+		g_form.addOption('u_what_needed', 'other', 'Other');
+	}
 
    //If the form is loading AND it's not a new record, set u_what_needed value to the value before it was loaded
 	if(isLoading && !g_form.isNewRecord()){
